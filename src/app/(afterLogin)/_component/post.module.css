@@ -80,10 +80,11 @@
     max-height: 510px;
     background-repeat: no-repeat;
 }
-.postImageSection img {
+.postImageSection a {
     border-radius: 16px;
     max-height: 510px;
     width: 100%;
+    border: 1px solid black;
 }
 .postImageSection.twoImage {
     height: 272px;
