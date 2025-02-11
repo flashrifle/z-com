@@ -1,6 +1,7 @@
 import style from './signup.module.css';
 import BackButton from '@/app/(beforeLogin)/_component/BackButton';
 import { redirect } from 'next/navigation';
+import Form from 'next/form';
 
 export default function SignupModal() {
   const submit = async (formData: FormData) => {
@@ -38,6 +39,7 @@ export default function SignupModal() {
     if (shouldRedirect) {
       redirect('/home'); // try catch 안에서 사용 X
     }
+    return { message: '' };
   };
 
   return (
@@ -48,7 +50,7 @@ export default function SignupModal() {
             <BackButton />
             <div>계정을 생성하세요.</div>
           </div>
-          <form action={submit}>
+          <Form action={submit}>
             <div className={style.modalBody}>
               <div className={style.inputDiv}>
                 <label className={style.inputLabel} htmlFor="id">
@@ -80,7 +82,7 @@ export default function SignupModal() {
                 가입하기
               </button>
             </div>
-          </form>
+          </Form>
         </div>
       </div>
     </>
