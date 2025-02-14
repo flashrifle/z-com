@@ -13,7 +13,7 @@ export default function Login() {
     return null;
   }
 
-  router.replace('i/flow/login');
+  router.replace('/i/flow/login');
   return <Main />;
 }
 
