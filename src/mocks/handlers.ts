@@ -11,7 +11,7 @@ function generateDate() {
 }
 
 const User = [
-  { id: 'test1', nickname: 'testNickname', image: '/yRsRRjGO.jpg' },
+  { id: 'flashrifle', nickname: 'flashrifle', image: '/yRsRRjGO.jpg' },
   { id: 'test2', nickname: 'testNickname', image: '/yRsRRjGO.jpg' },
   { id: 'test3', nickname: 'testNickname', image: '/yRsRRjGO.jpg' },
 ];
