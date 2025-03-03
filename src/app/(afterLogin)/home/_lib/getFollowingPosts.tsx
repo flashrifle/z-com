@@ -3,6 +3,7 @@ export async function getFollowingPosts() {
     next: {
       tags: ['posts', 'followings'],
     },
+    cache: 'force-cache',
   });
   if (!res.ok) {
     throw new Error('Failed to fetch data');

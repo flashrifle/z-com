@@ -7,6 +7,7 @@ export async function getPostRecommends({ pageParam }: Props) {
     next: {
       tags: ['posts', 'recommends'],
     },
+    cache: 'force-cache',
   });
   if (!res.ok) {
     throw new Error('Failed to fetch data');
